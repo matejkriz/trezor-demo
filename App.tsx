@@ -25,7 +25,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Section: React.FunctionComponent<{title: string}> = ({
+const Section: React.FunctionComponent<{ title: string }> = ({
   children,
   title,
 }) => {
