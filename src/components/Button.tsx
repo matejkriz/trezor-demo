@@ -9,7 +9,7 @@ import {
   ImageSourcePropType,
 } from 'react-native';
 
-import { colors, typography, size } from '../theme';
+import { colors, typography, FontVariant, size } from '../theme';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
   label: {
     color: colors.grayDark,
     ...typography,
+    fontFamily: FontVariant.bold,
     fontSize: size(14),
     lineHeight: size(22),
-    fontWeight: '600',
   },
   disabled: {
     color: colors.grayLight,

@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
-import { colors, typography } from '../theme';
+import { colors, typography, FontVariant } from '../theme';
 
 const styles = StyleSheet.create({
   text: {
     color: colors.grayLight,
     ...typography,
-    fontWeight: '500',
+    fontFamily: FontVariant.medium,
   },
 });
 

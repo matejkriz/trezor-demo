@@ -1,13 +1,13 @@
 import React from 'react';
 import { Image, StyleSheet, Text } from 'react-native';
 
-import { colors, typography } from '../theme';
+import { colors, typography, FontVariant } from '../theme';
 
 const styles = StyleSheet.create({
   text: {
     color: colors.green,
     ...typography,
-    fontWeight: '600',
+    fontFamily: FontVariant.bold,
   },
   icon: {
     width: 24,

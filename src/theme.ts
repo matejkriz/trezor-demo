@@ -17,11 +17,19 @@ export const colors = {
   white: '#ffffff',
 };
 
+export enum FontVariant {
+  black = 'NotoSansJP-Black',
+  bold = 'NotoSansJP-Bold',
+  light = 'NotoSansJP-Light',
+  medium = 'NotoSansJP-Medium',
+  regular = 'NotoSansJP-Regular',
+  thin = 'NotoSansJP-Thin',
+}
+
 export const typography: TextStyle = {
   fontSize: size(16),
   lineHeight: size(24),
-  fontFamily: undefined,
-  fontWeight: 'normal',
+  fontFamily: FontVariant.regular,
 };
 
 export const layout = {
