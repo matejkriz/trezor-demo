@@ -6,6 +6,8 @@ import {
   useColorScheme,
 } from 'react-native';
 
+import { Header } from './components/Header';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -18,6 +20,7 @@ export const App: React.FunctionComponent = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <Header />
     </SafeAreaView>
   );
 };
