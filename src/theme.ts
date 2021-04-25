@@ -1,7 +1,8 @@
-import { PixelRatio, TextStyle } from 'react-native';
+import { Dimensions, TextStyle } from 'react-native';
 
-const scale = PixelRatio.get();
-const rate = 0.2;
+const { width, height } = Dimensions.get('screen');
+const scale = Math.min(width, height) / 375;
+const rate = 0.5;
 
 export const size = (defaultSize: number) => {
   const ratio = (scale - 1) * rate + 1;
